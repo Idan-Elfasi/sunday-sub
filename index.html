@@ -6,10 +6,27 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Make it meme</title>
 </head>
-<body>
-    <h1>make it meme</h1>
-    <section class="editor"></section>
-    <section class="gallery"></section>
-    <script src="js/main.js"></script>
+<body class="main-layout" onload="inIt()">
+    <!-- <h1>make it meme</h1> -->
+    <section class="editor">
+<header class="main-header flex">
+    <label class="logo">me艾马e</label>
+    <nav class="main-nav">
+        <ul >
+            <li><a href="#"></a>editor</li>
+            <li><a href="#"></a>gallery</li>
+            <li><a href="#"></a>saved</li>
+        </ul>
+    </nav>
+    <select name="lang" id="lang">
+        <option value="en">english</option>
+        <option value="he">עברית</option>
+    </select>
+</header>
+<canvas width="350" height="350"></canvas>
+
+    </section>
+    <!-- <section class="gallery"></section> -->
+    <script src="js/meme.controller.js"></script>
 </body>
 </html>
